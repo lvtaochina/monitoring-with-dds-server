@@ -55,7 +55,7 @@ def getddsrootv2(*, url, parm, use, passwd):
                         root = None
                                         
         except requests.exceptions.RequestException:
-                print("无法连接到DDS服务器:检查网络,服务器IP和端口号")
+                print("无法连接到DDS服务器:请检查网络,服务器IP和端口号")
                 root = None
         finally:
                 return root
